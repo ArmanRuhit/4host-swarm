@@ -12,8 +12,9 @@ volumes:
 
 networks:
   byfn:
-    external:
-      name: first-network
+    external: true
+    driver: overlay
+    name: first-network
 
 services:
 
